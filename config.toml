@@ -14,7 +14,7 @@ preserveTaxonomyNames = true
 
 
 [[menu.main]]
-    name = "Kata"
+    name = "Post"
     url = "/post/"
     weight = 1
 [[menu.main]]
