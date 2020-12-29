@@ -12,18 +12,15 @@ preserveTaxonomyNames = true
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
-[[menu.main]]
-    name = "Tentang"
-    url = "/about/"
-    weight = 1
+
 [[menu.main]]
     name = "Kata"
     url = "/post/"
-    weight = 2
+    weight = 1
 [[menu.main]]
     name = "Visual"
     url = "/visual/"
-    weight = 3
+    weight = 2
 
 [params]
   author = "Kuncara Hadi"

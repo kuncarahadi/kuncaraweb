@@ -42,7 +42,8 @@ code {
   padding: 30px 0;
   position: relative;
   background: white;
-  border-bottom: 1px solid #eaeaea;
+   border-bottom: 3px solid MediumSeaGreen;
+ 
 }
 
 .nav {
@@ -50,12 +51,13 @@ code {
   margin: 0 auto;
   padding: 0 20px;
   text-align: right;
+  
 }
 
 .nav-logo {
   float: left;
-  margin-top: -11px;
-  transition: transform 150ms ease-out;
+  margin-bottom: -5px;
+  transition: transform 150ms ease-out;;
 }
 
 .nav-logo:hover {
@@ -73,14 +75,14 @@ code {
 .nav-links {
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 16px;
   list-style: none;
   font-weight: bold;
 }
 
 .nav-links li {
   display: inline-block;
-  margin: 0 0 0 15px;
+  margin: 0 0 0 0;
 }
 
 .nav-links li:first-child {
@@ -88,6 +90,7 @@ code {
 }
 
 .nav-links a {
+  font-size: 25px;
   text-decoration: none;
   color: #111;
 }
@@ -124,8 +127,8 @@ code {
   padding: 1px 5px;
   font-weight: bold;
   border-radius: 3px;
-  background: #bbb;
-  color: #fff
+  background: #8cfc03;
+  color: black
 }
 
 .article-content p {
@@ -222,13 +225,9 @@ code {
   padding: 0;
   color: #ccc;
   font-size: 14px;
+  font-weight: bold;
 }
 
-.footer-links li {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
 
 .footer-links a {
   color: #888;
@@ -242,26 +241,30 @@ code {
   color: #222;
 }
 
-.footer-links-about a {
+.footer-about {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+  color: #ccc;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.footer-about a {
   color: #888;
   text-decoration: none;
   transition: color 150ms ease;
   margin: 5px;
 }
 
-.footer-links-about a:hover,
-.footer-links-about a:focus {
+.footer-about a:hover,
+.footer-about a:focus {
   color: #222;
 }
-.footer-links li::before {
-  content: '/';
-  position: relative;
-  left: -2px;
-}
 
-.footer-links li:first-child::before {
-  display: none;
-}
+
+
 .footer-links-kudos img {
   position: relative;
   top: 6px;
