@@ -21,6 +21,10 @@ h6 {
   color: #222;
 }
 
+h1 {
+  text-align: center;
+}
+
 a {
   outline: none;
 }
@@ -35,16 +39,16 @@ code {
 }
 
 .header {
-  padding: 20px 0;
+  padding: 30px 0;
   position: relative;
-  background: #f5f5f5;
+  background: white;
   border-bottom: 1px solid #eaeaea;
 }
 
 .nav {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
   text-align: right;
 }
 
@@ -63,13 +67,15 @@ code {
   max-height: 40px;
   width: auto;
   border-radius: 50%;
-}
+  margin-right: 30px;
+  }
 
 .nav-links {
   margin: 0;
   padding: 0;
   font-size: 14px;
   list-style: none;
+  font-weight: bold;
 }
 
 .nav-links li {
@@ -87,7 +93,8 @@ code {
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: MediumSeaGreen;
+  text-shadow: 1px 1px 1px white;
 }
 
 .content {
@@ -205,6 +212,10 @@ code {
   text-align: center;
 }
 
+.icon-links a:hover {
+  fill: green;
+}
+
 .footer-links {
   list-style: none;
   margin: 0;
@@ -223,7 +234,7 @@ code {
   color: #888;
   text-decoration: none;
   transition: color 150ms ease;
-  margin: 0 15px;
+  margin: 0px;
 }
 
 .footer-links a:hover,
@@ -231,6 +242,17 @@ code {
   color: #222;
 }
 
+.footer-links-about a {
+  color: #888;
+  text-decoration: none;
+  transition: color 150ms ease;
+  margin: 5px;
+}
+
+.footer-links-about a:hover,
+.footer-links-about a:focus {
+  color: #222;
+}
 .footer-links li::before {
   content: '/';
   position: relative;
@@ -308,6 +330,7 @@ code {
 
   .footer-links {
     font-size: inherit;
+    margin: 0;
   }
 }
 
@@ -319,3 +342,4 @@ code {
     box-shadow: none;
   }
 }
+

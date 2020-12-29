@@ -1,0 +1,15 @@
+---
+title: 'Sample Post: Diagram Sankey D3'
+author: Kuncara Hadi
+date: '2020-12-29'
+slug: sample-post-diagram-sankey-d3
+categories:
+  - post
+tags:
+  - d3
+---
+
+This Sankey diagram visualizes the flow of electricity energy: source are on the left, and electricity consumption are on the right. Links show how varying amounts of electricity energy (GWh) are generated, transmitted, and distributed before being consumed or lost. Data: [Perusahaan Listrik Negara](pln.co.id)
+
+<iframe width="100%" height="735" frameborder="0"
+  src="https://observablehq.com/embed/@kuncarahadi/sankey-diagram?cell=viewof+edgeColor&cell=chart"></iframe>

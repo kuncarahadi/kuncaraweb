@@ -4,14 +4,15 @@
           {{ partial "social_links.html" . }} 
     </div>
 
-    <div> 
-        <ul class="footer-links">
-          <li>
-            <a href="/" class="footer-links-kudos">Kuncara Hadi <img src="{{ "images/logo.png" | relURL }}" alt="Img link to Hugo website" width="22" height="22"></a>
-          </li>
-        </ul>
-      </footer>
+   <div class='footer-links-about'>
+    <a href="/about">About</a><a href='/contact'>Contact</a>
+   </div>
+
+    <div class='footer-links'>
+        <p>Code and design by <a href='/'>Kuncara Hadi</a> </p>
     </div>
+      </footer>
+
     {{ partial "footer_highlightjs" . }}
     {{ partial "footer_mathjax" . }}
     {{ template "_internal/google_analytics.html" . }}
