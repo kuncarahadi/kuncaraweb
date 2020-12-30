@@ -260,7 +260,9 @@ code {
 
 
 .icon-links a{
-  fill: #888;
+  display: flex;
+fill: #888;
+  flex-direction: row-reverse;
 }
 .icon-links a:hover {
   fill: green;
