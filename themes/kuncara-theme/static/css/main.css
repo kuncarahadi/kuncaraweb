@@ -261,8 +261,9 @@ code {
 
 .icon-links a{
   display: flex;
-fill: #888;
-  flex-direction: row-reverse;
+  fill: #888;
+  justify-content: space-between;
+ flex-direction: row-reverse;
 }
 .icon-links a:hover {
   fill: green;
