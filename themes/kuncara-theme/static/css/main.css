@@ -5,7 +5,7 @@ body {
   position: relative;
 }
 contianer{
-                margin:0px auto 0px auto;
+  display: flex;
 }
 
 body {
@@ -27,7 +27,9 @@ h6 {
 h1 {
   text-align: center;
 }
-
+a:hover{
+  color: MediumSeaGreen;
+}
 a {
   outline: none;
 }
@@ -54,13 +56,20 @@ code {
   margin: 0 auto;
   padding: 0 20px;
   text-align: right;
+}  
+.nav { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-logo {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   float: left;
-  margin-bottom: auto;
+  margin-bottom: 0;
   background-color: white;
 }
 
@@ -70,19 +79,20 @@ code {
   transition: transform 150ms ease-out;
   display: block;
   height: 50px;
-  width: auto;
+  width: 50px;
   border-radius: 50%;
   margin-right: 30px;
-  vertical-align: baseline;
  }
-
+.nav-logo img:hover {
+  zoom: 105%;
+}
 .nav-links {
   margin: 0;
   padding: 0;
   font-size: 16px;
   list-style: none;
   font-weight: bold;
-border-bottom: 3px solid MediumSeaGreen;
+ 
 }
 
 .nav-links li {
@@ -99,6 +109,7 @@ border-bottom: 3px solid MediumSeaGreen;
   text-decoration: none;
   color: #111;
   margin-left: 5px;
+  margin-bottom: -10px;
 }
 
 .nav-links a:hover {
@@ -221,6 +232,9 @@ border-bottom: 3px solid MediumSeaGreen;
   text-align: center;
 }
 
+.icon-links a{
+  fill: #888
+}
 .icon-links a:hover {
   fill: green;
 }
