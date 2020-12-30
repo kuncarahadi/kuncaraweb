@@ -26,11 +26,11 @@
         {{ .Date.Format "2006-01-02" }}
       </span>
       </h2>
-       	<span class="description">
+       	<span class="archive-description">
 					{{ if isset .Params "description" }}
 					{{ .Description }}
-					{{ else if gt (len .Plain) 120 }}
-					{{ slicestr .Plain 0 120 | htmlUnescape }}...
+					{{ else if gt (len .Plain) 200 }}
+					{{ slicestr .Plain 0 200 | htmlUnescape }}...
 					{{ else }}
 					{{ .Plain  | htmlUnescape }}
 					{{ end }}
