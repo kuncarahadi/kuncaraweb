@@ -6,9 +6,10 @@
          alt="{{ .Site.Params.logo.alt }}">
   </a>
 
-  <ul class="nav-links">
+  <span><ul class="nav-links">
     {{ range .Site.Menus.main }}
     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
     {{ end }}
   </ul>
+  </span>
 </nav>
