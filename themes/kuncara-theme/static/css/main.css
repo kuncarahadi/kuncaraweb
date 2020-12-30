@@ -265,6 +265,7 @@ display: flex;
 
 .icon-links a{
   fill: #888;
+margin-right: 2px;
 }
 .icon-links a:hover {
   fill: green;
