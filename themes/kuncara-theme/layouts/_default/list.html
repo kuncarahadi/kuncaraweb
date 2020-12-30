@@ -26,6 +26,16 @@
         {{ .Date.Format "2006-01-02" }}
       </span>
       </h2>
+       	<span class="description">
+					{{ if isset .Params "description" }}
+					{{ .Description }}
+					{{ else if gt (len .Plain) 120 }}
+					{{ slicestr .Plain 0 120 | htmlUnescape }}...
+					{{ else }}
+					{{ .Plain  | htmlUnescape }}
+					{{ end }}
+				</span>
+    
     </article>
     {{ end }}
     {{ end }}
