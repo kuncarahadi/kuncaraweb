@@ -251,7 +251,7 @@ code {
 .footer-item { 
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   margin-top: 10px;
@@ -269,7 +269,7 @@ code {
 .footer-desc{
   display: flex;
   flex-wrap: nowrap;
-  align-content: flex-end;
+  align-content: center;
   flex-direction: column;
 }
 
