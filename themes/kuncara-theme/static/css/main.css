@@ -268,7 +268,7 @@ code {
 
 .footer-desc{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-content: flex-end;
   flex-direction: column;
 }
