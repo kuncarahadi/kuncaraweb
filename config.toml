@@ -23,20 +23,15 @@ preserveTaxonomyNames = true
     weight = 2
 
 [params]
-  author = "Kuncara Hadi"
-  description = "Rumah untuk menulis pengalaman pribadi, pekerjaan, dan project."
-  twitterAuthor = "@kuncarahadi"
-  twitterSite = "@kuncarahadi"
+    author = "Kuncara Hadi"
+    description = "Make data undestandable and useful. Code and design by Kuncara Hadi."
+    twitterAuthor = "@kuncarahadi"
+    twitterSite = "@kuncarahadi"
+    images = ["logo.png"]
+    Title = "Kuncara Hadi - Personal Portofolio"
   
     # google fonts
     googlefonts = "//fonts.googleapis.com/css?family=Merriweather|Maven+Pro|EB+Garamond"
-    
-    #metatags, open graph, twitter card
-    
-
-    description = "Make data undestandable and useful. Code and design by Kuncara Hadi."
-    images = ["logo.png"]
-    title = "Kuncara Hadi - Personal Portofolio"
     
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
