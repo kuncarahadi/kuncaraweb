@@ -28,6 +28,8 @@ preserveTaxonomyNames = true
   twitterAuthor = "@kuncarahadi"
   twitterSite = "@kuncarahadi"
   
+  googlefonts = "//fonts.googleapis.com/css?family=Merriweather|Maven+Pro|EB+Garamond"
+  
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.12.0"
