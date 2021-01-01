@@ -411,3 +411,59 @@ margin-right: 3px;
   }
 }
 
+
+/* Contact Form */
+
+.contact__form {
+  max-width: 1020px;
+  position: relative;
+  margin: auto;
+}
+
+
+.contact__name input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid MediumSeaGreen;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact__email input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid MediumSeaGreen;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact__msg textarea, select {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid MediumSeaGreen;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+  font-family: sans-serif;
+}
+
+.contact__submit button[type=submit], input[type=file] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.submit {
+
+}
