@@ -27,7 +27,7 @@ preserveTaxonomyNames = true
     description = "Make data undestandable and useful. Code and design by Kuncara Hadi."
     twitterAuthor = "@kuncarahadi"
     twitterSite = "@kuncarahadi"
-    images = ["/images/logo.png"]
+    images = "logo.png"
     Title = "Kuncara Hadi - Personal Portofolio"
   
     # google fonts
@@ -46,7 +46,7 @@ preserveTaxonomyNames = true
     favicon = "favicon.ico"
 
 [params.logo]
-    url = ["/images/logo.png"]
+    url = "logo.png"
     width = 50
     height = 50
     alt = "Logo"
