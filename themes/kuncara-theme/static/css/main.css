@@ -416,6 +416,7 @@ margin-right: 3px;
 
 .contact__form {
   max-width: 900px;
+  padding: 20px 20px;
   position: relative;
   margin: auto;
 }
