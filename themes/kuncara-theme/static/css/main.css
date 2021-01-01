@@ -52,7 +52,7 @@ code {
 }
 
 .nav {
-  max-width: 900px;
+  max-width: 1020px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: right;
@@ -122,7 +122,7 @@ code {
 }
 
 .content {
-  max-width: 900px;
+  max-width: 1020px;
   margin: 40px auto 10px;
   padding: 0 15px;
   font-size: 16px;
@@ -243,7 +243,7 @@ code {
 }
 
 .footer-item {
-  max-width: 900px;
+  max-width: 1020px;
   margin: 0 auto;
   padding: 0 20px;
   text-align: right;
