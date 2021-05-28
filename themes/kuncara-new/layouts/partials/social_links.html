@@ -1,0 +1,15 @@
+
+
+ 
+{{- range $name, $path := .Site.Params.social }}
+  {{/* social icons */}}
+  {{- if $path }}
+    {{- $realName := $name }}
+    {{- $filePath := (print "svg/" $realName ".svg") }}
+    <a href="{{ $path | safeURL }}" rel="me noopener" class="iconfont"
+      title="{{ $realName }}" {{ if not (hasPrefix $path "mailto:") }} target="_blank"
+      {{ end }}>
+      {{ partial $filePath }}
+    </a>
+  {{- end }}
+{{- end }}

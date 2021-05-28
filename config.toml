@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 title = "Kuncara Hadi - Personal Portofolio"
-theme = "kuncara-theme"
+theme = "kuncara-new"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
