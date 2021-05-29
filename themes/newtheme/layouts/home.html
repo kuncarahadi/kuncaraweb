@@ -8,7 +8,7 @@
     <div class="container">
     {{- block "main" . }}{{- end }}
 
-    {{ with .Site.GetPage "/blog" }}
+    {{ with .Site.GetPage "/post" }}
         <div class="section" id="{{ .Title | urlize }}">
             <!-- Begin Blog container -->
             <div class="container">
@@ -28,22 +28,9 @@
                 {{ end }}
             </div>
         </div>
-            {{ if .Site.Params.home.showAllPosts }}
-            <div class="section" id="all-posts">
-                <div class="container">
-                    <h2 class="title is-2 top-pad">{{ i18n "index_blog_allPosts" . }}</h2>
-                    {{if .Site.Params.home.allPostsArchiveFormat}}
-                        {{ partialCached "blog/archive.html" .}}
-                    {{else}}
-                        {{ partialCached "blog/li.html" . }}
-                    {{end}}
-                </div>
-            </div>
-            {{ else }}
                 <div class="container has-text-centered top-pad">
-                    <a href="{{ .Permalink }}">{{ i18n "index_blog_allPosts" . }}</a>
+                    <a href="{{ .Permalink }}">All posts</a>
                 </div>
-            {{ end }}
 
        
     <!-- End Blog section -->
