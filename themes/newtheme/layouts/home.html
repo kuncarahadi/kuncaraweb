@@ -5,6 +5,8 @@
     {{- partial "header.html" . -}}
     {{ partial "header_hero.html" . }}
 
+    <div class="container is-success is-light"><hr></div>
+    {{ end }}
     <div class="container">
     {{- block "main" . }}{{- end }}
 
@@ -34,7 +36,7 @@
 
        
     <!-- End Blog section -->
-    <div class="container"><hr></div>
+    <div class="container is-success is-light"><hr></div>
     {{ end }}
 
     </div>
