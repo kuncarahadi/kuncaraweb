@@ -7,10 +7,7 @@
 						<p class="is-size-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eligendi soluta
 							voluptate facere molestiae consequatur.</p>
 						<div class="social-media">
-							<a href="https://facebook.com" target="_blank" class="button is-light is-large"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-							<a href="https://instagram.com" target="_blank" class="button is-light is-large"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-							<a href="https://twitter.com" target="_blank" class="button is-light is-large"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            {{- range $name, $path := .Site.Params.social }}
+							{{- range $name, $path := .Site.Params.social }}
                                 {{/* social icons */}}
                                 {{- if $path }}
                                 {{- $realName := $name }}
@@ -29,7 +26,7 @@
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-								<input class="input is-medium" type="text"  name="name" placeholder="Your Name">>
+								<input class="input is-medium" type="text"  name="name" placeholder="Your Name">
 							</div>
 						</div>
 						<div class="field">
@@ -47,6 +44,8 @@
                         <div class="control">
                             <input type="file" name="file" class="input is-medium">
 						</div>
+                        <div>
+                        </div>
 						<div class="control">
 							<button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">Send Message</button>
 						</div>
