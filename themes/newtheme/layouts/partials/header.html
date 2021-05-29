@@ -4,8 +4,48 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-    <div class="section">
-      <header class="hero is-primary">
-        {{ partial "nav.html" . }}
-      </header>
-    </div>
+      <section class="hero is-info is-medium is-bold">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href="{{ "/" | relURL }}" class="navbar-item">
+                                <img src="{{ print "images/" .Site.Params.logo.url | relURL }}"
+                                width="{{ .Site.Params.logo.width }}"
+                                height="{{ .Site.Params.logo.height }}"
+                                alt="{{ .Site.Params.logo.alt }}">
+                            </a>  
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </div>
+                        <div id="navbarMenu" class="navbar-menu">
+                            <div class="navbar-end">
+                                <div class="tabs is-right">
+                                   <ul class="is-active">
+                                      {{ range .Site.Menus.main }}
+                                      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                      {{ end }}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                    Kuncara Hadi
+                    </h1>
+                    <h2 class="subtitle">
+                    Welcome to my Blog
+                    </h2>
+                </div>
+            </div>
+        </section>  
+    </header>
+
+    
