@@ -1,12 +1,7 @@
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 {{ hugo.Generator }}
 
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" media="all">
-<link rel="stylesheet" href="{{ "css/bulma/bulma.min.css" | relURL }}" media="all">
 
 
 {{ if eq .URL "/" }}
@@ -60,4 +55,10 @@
 <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}" />
 {{ end }}
 {{ partial "head_highlightjs" . }}
-
+<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" media="all">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+{{ range .Site.Params.customCSS }}
+<link rel="stylesheet" href="{{ . | relURL }}">
+{{ end }}
+{{ partial "head_custom" . }}
