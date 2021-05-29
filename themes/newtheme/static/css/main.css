@@ -34,9 +34,6 @@
   border-top: 4px solid MediumSeaGreen;
 }
 .icon-links {
-display: flex;
-  justify-content: space-between;
- flex-direction: row-reverse;
 }
 
 .icon-links a{
