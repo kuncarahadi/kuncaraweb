@@ -1,6 +1,11 @@
-<main class="content" role="main">
-<div>
-    tes
-  </div>
+<html lang="{{ .Site.Language.Lang }}">
+{{- partial "head.html" . -}}
 
-</main>
+<body>
+    {{- partial "header.html" . -}}
+    {{- block "main" . }}{{- end }}
+    {{ partial "footer_contact" . }}   
+    {{- partial "footer.html" . -}}
+</body>
+
+</html>
