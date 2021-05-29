@@ -15,7 +15,7 @@
                                 {{- if $path }}
                                 {{- $realName := $name }}
                                 {{- $filePath := (print "svg/" $realName ".svg") }}
-                                <a href="{{ $path | safeURL }}" rel="me noopener" class="iconfont"
+                                <a href="{{ $path | safeURL }}" rel="me noopener" class="button is-light is-large"
                                     title="{{ $realName }}" {{ if not (hasPrefix $path "mailto:") }} target="_blank"
                                     {{ end }}>
                                     {{ partial $filePath }}
