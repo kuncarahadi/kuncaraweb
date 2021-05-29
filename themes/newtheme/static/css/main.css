@@ -23,3 +23,26 @@
 .footer a .nav-item {
   color: whitesmoke;
 }
+
+.footer-item { 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-top: 4px solid MediumSeaGreen;
+}
+.icon-links {
+display: flex;
+  justify-content: space-between;
+ flex-direction: row-reverse;
+}
+
+.icon-links a{
+  fill: #888;
+margin-right: 3px;
+}
+.icon-links a:hover {
+  fill: green;
+}
