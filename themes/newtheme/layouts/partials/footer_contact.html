@@ -25,23 +25,27 @@
 						</div>
 					</div>
 					<div class="column is-one-third has-text-left">
+                    <form action="https://getform.io/f/e896f409-d1b7-4888-aa72-fde9f9dc526e" method="POST" enctype="multipart/form-data" class="contact__form" id="contactForm">
 						<div class="field">
 							<label class="label">Name</label>
 							<div class="control">
-								<input class="input is-medium" type="text">
+								<input class="input is-medium" type="text"  name="name" placeholder="Your Name">>
 							</div>
 						</div>
 						<div class="field">
 							<label class="label">Email</label>
 							<div class="control">
-								<input class="input is-medium" type="text">
+								<input class="input is-medium" type="email" name="email" placeholder="Your Email">
 							</div>
 						</div>
 						<div class="field">
 							<label class="label">Message</label>
 							<div class="control">
-								<textarea class="textarea is-medium"></textarea>
+								<textarea class="textarea is-medium" name="message" placeholder="Type your message here..."></textarea>
 							</div>
+						</div>
+                        <div class="control">
+                            <input type="file" name="file" class="button is-link is-fullwidth has-text-weight-medium is-medium">
 						</div>
 						<div class="control">
 							<button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">Send Message</button>
