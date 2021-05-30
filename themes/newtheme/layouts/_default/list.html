@@ -1,13 +1,13 @@
 {{ partial "header.html" . }}
 <div class="container is-success is-light"><br></div>
-<main class="section" role="main">
+<main class="container" role="main">
 
   {{ if .Content }}
-  <article class="article">
+  <article class="container">
     {{ if .Title }}
-    <h1 class="article-title">{{ .Title }}</h1>
+    <h1 class="title is-2 strong-post-title">{{ .Title }}</h1>
     {{ end }}
-    <div class="article-content">
+    <div class="markdown">
       {{ .Content }}
     </div>
   </article>
