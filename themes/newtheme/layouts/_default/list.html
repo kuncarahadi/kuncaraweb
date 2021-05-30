@@ -13,7 +13,8 @@
   </article>
   {{ end }}
    
-<div class="container is-fullheight">
+<div class="section is-large">
+<div class="container is-fluid">
 
   {{ range .Pages.ByPublishDate.Reverse }}
     <div class="summary"><br>{{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}{{ end }}
@@ -30,7 +31,7 @@
       </div>
     </div>
   {{ end }}
-
+</div>
 </div>
 
 
