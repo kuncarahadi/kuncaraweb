@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 <div class="container is-success is-light"><br></div>
-<main class="container" role="main">
+<main class="container top-pad" role="main">
 
   {{ if .Content }}
   <article class="article">
@@ -13,8 +13,8 @@
   </article>
   {{ end }}
    
-<div class="section is-medium">
-<div class="container is-fluid top-pad">
+  <div class="section is-medium">
+  <div class="container is-fluid top-pad">
 
   {{ range .Pages.ByPublishDate.Reverse }}
     <div class="summary"><br>{{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}{{ end }}
@@ -31,7 +31,7 @@
       </div>
     </div>
   {{ end }}
-</div>
+  </div>
 </div>
 
 
