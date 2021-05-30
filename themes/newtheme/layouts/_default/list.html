@@ -20,23 +20,22 @@
     {{ range (where $pages "Section" "!=" "").GroupBy "Section" }}
     <h1 class="archive-title">{{ .Key | upper}}</h1>
     {{ range .Pages }}
-    <h2>
-      <article class="archive-item">
-      <div><a href="{{ .RelPermalink }}" class="archive-item-link">{{ .Title }}</a>
-      <span class="archive-item-date">
-        {{ .Date.Format "2006-01-02" }}
-      </span>
-      </div>
-      <div class="archive-description">
-					{{ if isset .Params "description" }}
-					{{ .Description }}
-					{{ else if gt (len .Plain) 200 }}
-					{{ slicestr .Plain 0 200 | htmlUnescape }}...
-					{{ else }}
-					{{ .Plain  | htmlUnescape }}
-					{{ end }}
-			</div>
-		</h2>
+        <div class="section" id="{{ .Title | urlize }}">
+            <!-- Begin Blog container -->
+            <div class="container">
+              {{ range .Pages.ByPublishDate.Reverse }}
+                    <div class="summary"><br>{{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}{{ end }}
+                        <h3 class="title is-3 latest-post-title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h3>
+                            <div class="markdown">
+                            {{ .Summary }}
+                            {{ if .Truncated }}
+                            <a href="{{ .Permalink }}">Read more</a>
+                            {{ end }}
+                            </div>
+                    </div>
+              {{ end }}
+            </div>
+        </div>
     
     </article>
     {{ end }}
