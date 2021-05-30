@@ -50,7 +50,7 @@ preserveTaxonomyNames = true
     width = 35
     height = 35
     alt = "Logo"
-    use = 
+    use = false
 
 [params.social]
   email = "mailto:kuncara@outlook.com"
