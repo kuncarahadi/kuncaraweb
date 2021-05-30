@@ -4,8 +4,10 @@
     {{ partial "head.html" . }}
   </head>
   <body>
-      <section class="container has-background-grey-lighter">
-            <nav class="navbar is-transparent">
+      <section class="hero is-small is-bold">
+            <div class="hero-head">
+                <nav class="navbar">
+                    <div class="container">
                         <div class="navbar-brand">
                             {{if .Site.Params.logo.use}}
                             <a href="{{ "/" | relURL }}" class="navbar-item">
@@ -32,6 +34,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </nav>
             </div>
         </section>  
