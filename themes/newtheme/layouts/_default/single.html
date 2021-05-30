@@ -3,16 +3,9 @@
 <main class="section is-medium" role="main">
 
   <article class="container">
-    {{ if eq .Section "post" }}
-    <span class="post-data">{{ .ReadingTime }} min read</span>
-    {{ end }}
 
+    <span class="article-date">{{ .Date.Format "2006-01-02" }}</span> <span class="post-data"> | {{ .ReadingTime }} min read</span>
     <h1 class="title top-pad strong-post-title">{{ .Title }}</h1>
-
-    {{ if eq .Section "post" }}
-    <span class="article-date">{{ .Date.Format "2006-01-02" }}</span>
-    {{ end }}
-
     <div class="container markdown top-pad">
       {{ .Content }}
     </div>
