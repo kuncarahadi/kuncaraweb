@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-
+<div class="container is-success is-light"><hr></div>
 <main class="container" role="main">
 
   {{ if .Content }}
@@ -12,11 +12,11 @@
     </div>
   </article>
   {{ end }}
-    
-<div class="container">
+   
+<div class="container is-fullheight">
 
   {{ range .Pages.ByPublishDate.Reverse }}
-    <div class="summary">{{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}{{ end }}
+    <div class="summary"><br>{{ if .Params.date }}{{ .Date.Format (.Site.Params.dateFormat | default "Jan 02, 2006") }}{{ end }}
       <h3 class="title is-3 strong-post-title">
         <a href="{{ .Permalink }}">
             {{ .Title | markdownify }}
