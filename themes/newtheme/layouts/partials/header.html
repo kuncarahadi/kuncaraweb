@@ -8,25 +8,34 @@
             <div class="hero-head">
                 <nav class="navbar">
                     <div class="container">
+                    {{if .Site.Params.logo.use}}
                         <div class="navbar-brand">
-                            {{if .Site.Params.logo.use}}
                             <a href="{{ "/" | relURL }}" class="navbar-item">
                                 <img src="{{ print "images/" .Site.Params.logo.url | relURL }}"
                                 width="{{ .Site.Params.logo.width }}"
                                 height="{{ .Site.Params.logo.height }}"
                                 alt="{{ .Site.Params.logo.alt }}">
                             </a>
-                            {{ else }}
-                            <a href="{{ "/" | relURL }}" class="navbar-item">
-                               <div class= "is-family-monospace is-bold is-uppercase"> Kuncara Hadi </div>
-                            </a>
-                            {{end}}
+                            
                             <span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </span>
                         </div>
+                    {{else}}
+                    <div class="navbar-menu">
+                            <a href="{{ "/" | relURL }}" class="navbar-start">
+                            <div class = "is-bold is-uppercase"> Kuncara Hadi <div>   
+                            </a>
+                            
+                            <span class="navbar-burger burger" data-target="navbarMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                    </div>
+                    {{end}}
                         <div id="navbarMenu" class="navbar-menu">
                             <div class="navbar-end">
                                 <div class="tabs is-right">
