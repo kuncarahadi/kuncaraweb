@@ -9,12 +9,14 @@
                 <nav class="navbar">
                     <div class="container">
                         <div class="navbar-brand">
+                            {{if .Site.Params.logo.use}}
                             <a href="{{ "/" | relURL }}" class="navbar-item">
                                 <img src="{{ print "images/" .Site.Params.logo.url | relURL }}"
                                 width="{{ .Site.Params.logo.width }}"
                                 height="{{ .Site.Params.logo.height }}"
                                 alt="{{ .Site.Params.logo.alt }}">
-                            </a>  
+                            </a>
+                            {{end}}
                             <span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
                                 <span></span>
