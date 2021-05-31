@@ -1,10 +1,10 @@
 ---
-title : ""
-date : ""
+date: '{{ now.Format "Monday, January 2, 2006"}}'
+title: '{{ .File.TranslationBaseName | replaceRE "-" " " | title }}'
+draft: true
 authors : []
 description : ""
 type : ""
-draft : ""
 categories : []
 tags : []
 image : ""

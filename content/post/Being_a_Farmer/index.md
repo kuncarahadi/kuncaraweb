@@ -1,10 +1,10 @@
 ---
-title : "Kuncara Hadi - Blog"
-date : ""
+date: 'Monday, May 31, 2021'
+title: 'Index'
+draft: true
 authors : []
 description : ""
 type : ""
-draft : ""
 categories : []
 tags : []
 image : ""
@@ -13,6 +13,3 @@ imageCredit : ""
 imageCreditLink : ""
 disqus : ""
 ---
-
-
-
