@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Kuncara Hadi - Personal Portofolio"
+title = "Kuncara Hadi - Blog"
 theme = "newtheme"
 googleAnalytics = ""
 disqusShortname = ""
@@ -18,8 +18,8 @@ preserveTaxonomyNames = true
     url = "/post/"
     weight = 1
 [[menu.main]]
-    name = "Visual"
-    url = "/visual/"
+    name = "Contact"
+    url = "/#contact"
     weight = 2
 
 [params]
